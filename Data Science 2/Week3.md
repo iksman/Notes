@@ -30,6 +30,7 @@ Who becomes parent? -> Survival of the highest fitness
 * ```Tournament selection``` -> easiest
 * ```Rank selection```
 
+---
 ### Roulette Wheel Selection
 
 Higher fitness = higher chance of selection.<br>
@@ -42,3 +43,21 @@ Higher fitness = higher chance of selection.<br>
 * Calculate cumulative probability. -> ```0.4, 0.7, 1```
 * Plot it on a line -> ```(0)-----(0.4)----(0.7)----(1)```
 * Generate random floating point number between ```0``` and ```1``` -> ```0.8```
+
+---
+### Rank Selection
+Higher fitness = selection<br>
+<b>No randomness</b>, set values means better distribution<br>
+<b>Drawback</b> is that there are no diverse outcomes
+
+<b> Implementation: </b>
+* Rank all the items by fitness
+* Best fitness is highest number
+* Worst fitness is lowest number
+* Best fitness therefor is ```n``` where ```n``` is amount of items
+* Worst fitness therefor is ```1```
+
+---
+### Tournament Selection
+Running small "tournaments" among a few individuals chosen at random <br>
+Winner of each tournament (one with the best fitness) is selected for crossover<br>
