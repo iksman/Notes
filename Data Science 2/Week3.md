@@ -61,3 +61,28 @@ Higher fitness = selection<br>
 ### Tournament Selection
 Running small "tournaments" among a few individuals chosen at random <br>
 Winner of each tournament (one with the best fitness) is selected for crossover<br>
+
+---
+## Crossover
+Many ways to perform a recombination, depends on the representation of individuals.
+
+### Single Point Crossover
+
+* One crossover point is selected
+* Mix children by mixing before- and after of the parents on set point<br>
+```123|456, 987|654 -> 123654, 987456```
+
+### Two Point Crossover
+
+* Randomly two points are selected
+* Mix children by selecting 2 points to go to the other parent while the other parent gives 1 point back to the first<br>
+```12|34|56, 98|76|54 -> 983454, 127656```
+
+### Uniform Crossover
+
+* Bits are randomly copied from the first and second parent<br>
+```123456, 987654 -> 187454, 923656```
+
+### Arithmetic Crossover
+
+* Some arithmetic operation is performed to make new offspring
