@@ -3,7 +3,7 @@
 ## Intro
 
 Heuretic means aproximately but not exactly.<br>
-Some problems don't have exact solutions since the dataset may be too big, for example the ```traveling salesman problem```<br>
+Some problems don't have exact solutions since the dataset may be too big, for example the `traveling salesman problem`<br>
 
 ## Initialization
 
@@ -26,9 +26,9 @@ Choosing fitness function:
 
 Who becomes parent? -> Survival of the highest fitness
 
-* ```Roulette wheel selection```
-* ```Tournament selection``` -> easiest
-* ```Rank selection```
+* Roulette wheel selection
+* Tournament selection -> easiest
+* Rank selection
 
 ### Roulette Wheel Selection
 
@@ -38,10 +38,10 @@ Higher fitness = higher chance of selection.<br>
 
 <b>Implementation:</b><br>
 
-* Calculate weight by dividing fitness by total fitness. -> ```0.4, 0.3, 0.3```
-* Calculate cumulative probability. -> ```0.4, 0.7, 1```
-* Plot it on a line -> ```(0)-----(0.4)----(0.7)----(1)```
-* Generate random floating point number between ```0``` and ```1``` -> ```0.8```
+* Calculate weight by dividing fitness by total fitness. -> `0.4, 0.3, 0.3`
+* Calculate cumulative probability. -> `0.4, 0.7, 1`
+* Plot it on a line -> `(0)-----(0.4)----(0.7)----(1)`
+* Generate random floating point number between `0` and `1` -> `0.8`
 
 ### Rank Selection
 
@@ -54,8 +54,8 @@ Higher fitness = selection<br>
 * Rank all the items by fitness
 * Best fitness is highest number
 * Worst fitness is lowest number
-* Best fitness therefor is ```n``` where ```n``` is amount of items
-* Worst fitness therefor is ```1```
+* Best fitness therefor is `n` where `n` is amount of items
+* Worst fitness therefor is `1`
 
 ### Tournament Selection
 
@@ -70,16 +70,16 @@ Many ways to perform a recombination, depends on the representation of individua
 ### Single Point Crossover
 
 * One crossover point is selected
-* Mix children by mixing before- and after of the parents on set point<br>```123|456, 987|654``` -> ```123654, 987456```
+* Mix children by mixing before- and after of the parents on set point<br>`123|456, 987|654` -> `123654, 987456`
 
 ### Two Point Crossover
 
 * Randomly two points are selected
-* Mix children by selecting 2 points to go to the other parent while the other parent gives 1 point back to the first<br>```12|34|56, 98|76|54``` -> ```983454, 127656```
+* Mix children by selecting 2 points to go to the other parent while the other parent gives 1 point back to the first<br>`12|34|56, 98|76|54` -> `983454, 127656`
 
 ### Uniform Crossover
 
-* Bits are randomly copied from the first and second parent<br>```123456, 987654``` -> ```187454, 923656```
+* Bits are randomly copied from the first and second parent<br>`123456, 987654` -> `187454, 923656`
 
 ### Arithmetic Crossover
 
@@ -94,7 +94,7 @@ Used to prevent the falling of all solutions in the population into a local opti
 
 ### Binary Encoding
 
-* Invert a few randomly chosen bits from ```1``` to ```0``` or ```0``` to ```1```
+* Invert a few randomly chosen bits from `1` to `0` or `0` to `1`
 
 ---
 
