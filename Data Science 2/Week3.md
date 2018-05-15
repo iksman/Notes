@@ -5,6 +5,8 @@
 Heuretic means aproximately but not exactly.<br>
 Some problems don't have exact solutions since the dataset may be too big, for example the `traveling salesman problem`<br>
 
+---
+
 ## Initialization
 
 Possibilities:
@@ -14,6 +16,8 @@ Possibilities:
 * Set of solutions provided by human expert
 * Set of solutions provided by another heuristic algorithm
 
+---
+
 ## Fitness
 
 Choosing fitness function:
@@ -21,6 +25,8 @@ Choosing fitness function:
 * Silhouette
 * If it is slow, the entire algorithm is slow (repeated a lot)
 * Similair encoded solutions have similair fitness
+
+---
 
 ## Selection
 
@@ -115,13 +121,13 @@ Randomness can't be used this time :^)
 
 ---
 
-## Parameters values
+## Parameter Values
 
 General recommendations:
 
 * <b>Crossover Rate</b> should be high: ~80% - 95%
 * <b>Mutation Rate</b> should be very low: ~0.01% - 0.1% 
 * <b>Population Size</b> should be ~20-30, best size depends on size of encoded string.
-* <b> Selection: </b>
+* <b> Selection: </b>   
     * <b>Roulette Wheel</b> selection is a good choice
     * <b>Elitism</b> should be used
